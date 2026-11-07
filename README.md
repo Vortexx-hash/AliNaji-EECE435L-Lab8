@@ -20,12 +20,16 @@ Each folder has its own `Dockerfile`, `requirements` file and `.dockerignore`.
 | `amn38/lab8-ali_naji:0.0.1.RELEASE` | `Lab5_Code/` | 5000 |
 | `amn38/lab8-ali_naji:0.0.2.RELEASE` | `Users_API/` | 3000 |
 | `flask_docker:latest` | `Hello_Flask/` | 5000 |
+| `hello-world:latest` | pulled from Docker Hub (`docker run hello-world`) | - |
+
+Docker Desktop shows 4 images in total: the three built above plus `hello-world`.
 
 ## Build
 
 Run from the repository root:
 
 ```bash
+docker run --rm hello-world
 docker image build -t flask_docker Hello_Flask
 docker image build -t amn38/lab8-ali_naji:0.0.1.RELEASE Lab5_Code
 docker image build -t amn38/lab8-ali_naji:0.0.2.RELEASE Users_API
