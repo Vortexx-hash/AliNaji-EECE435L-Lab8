@@ -1,0 +1,17 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Word lock/temp files
+~$*
+
+# Course handout and the Moodle zip (not part of the repo)
+/Lab 8-Docker,containers, and images.docx
+/lab8_amn38_code.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
